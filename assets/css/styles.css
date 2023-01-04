@@ -283,7 +283,7 @@ img {
 }
 
 .home_scroll {
-  /* display: none; */
+  display: none;
 }
 
 .home_scroll_button {
@@ -308,4 +308,29 @@ img {
 
 .home_scroll_arrow {
   font-size: 1.25rem;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-weight: var(--font-medium);
+}
+
+.button:hover {
+  background-color: var(--first-color-alt);
+}
+
+.button_icon {
+  font-size: 1.25rem;
+  margin-left: var(--mb-0-5);
+  transition: 0.3s;
+}
+
+.button_flex {
+  display: inline-flex;
+  align-items: center;
 }
