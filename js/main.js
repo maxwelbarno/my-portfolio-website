@@ -56,18 +56,19 @@ tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.target);
 
-    //Remove active class from whatever tab element it was added
+    //Remove qualification_active class from whatever element it was added
     tabContents.forEach((tabContent) => {
       tabContent.classList.remove("qualification_active");
     });
 
-    //add active class to the qualification_content target element
+    //add qualification_active class to target element(Makes the toggle between tabs work)
     target.classList.add("qualification_active");
 
+    // Remove tab_active class from the active tab element
     tabs.forEach((tab) => {
-      tab.classList.remove("qualification_active");
+      tab.classList.remove("tab_active");
     });
 
-    tab.classList.add("qualification_active");
+    tab.classList.add("tab_active");
   });
 });
