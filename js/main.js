@@ -20,27 +20,27 @@ if (navClose) {
 }
 
 /**Remove Menu Mobile */
-const navLink = document.querySelectorAll(".nav_link");
+const navLink = document.querySelectorAll(".nav-link");
 
 function linkAction() {
   const navMenu = document.getElementById("nav-menu");
-  //When we click on any nav_link class, the show-menu class is removed
+  //When we click on any nav-link class, the show-menu class is removed
   navMenu.classList.remove("show-menu");
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
 /**Accordion for Skills */
-const skillsContent = document.getElementsByClassName("skills_content"),
-  skillsHeader = document.querySelectorAll(".skills_header");
+const skillsContent = document.getElementsByClassName("skills-content"),
+  skillsHeader = document.querySelectorAll(".skills-header");
 
 function toggleSkills() {
   let itemClass = this.parentNode.className;
   for (i = 0; i < skillsContent.length; i++) {
-    skillsContent[i].className = "skills_content skills_close";
+    skillsContent[i].className = "skills-content skills-close";
   }
 
-  if (itemClass === "skills_content skills_close") {
-    this.parentNode.className = "skills_content skills_open ";
+  if (itemClass === "skills-content skills-close") {
+    this.parentNode.className = "skills-content skills-open ";
   }
 }
 
@@ -56,19 +56,19 @@ tabs.forEach((tab) => {
   tab.addEventListener("click", () => {
     const target = document.querySelector(tab.dataset.target);
 
-    //Remove qualification_active class from whatever element it was added
+    //Remove qualification-active class from whatever element it was added
     tabContents.forEach((tabContent) => {
-      tabContent.classList.remove("qualification_active");
+      tabContent.classList.remove("qualification-active");
     });
 
-    //add qualification_active class to target element(Makes the toggle between tabs work)
-    target.classList.add("qualification_active");
+    //add qualification-active class to target element(Makes the toggle between tabs work)
+    target.classList.add("qualification-active");
 
     // Remove tab_active class from the active tab element
     tabs.forEach((tab) => {
-      tab.classList.remove("tab_active");
+      tab.classList.remove("tab-active");
     });
 
-    tab.classList.add("tab_active");
+    tab.classList.add("tab-active");
   });
 });
