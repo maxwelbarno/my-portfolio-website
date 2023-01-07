@@ -169,7 +169,7 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*==============Show ScrollUpp Arrow============== */
+/*==============Show ScrollUp Arrow============== */
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
   /* When the scroll is higher than 560 view port height, add the show-scroll class to the tag with the scroll */
@@ -180,3 +180,41 @@ function scrollUp() {
   }
 }
 window.addEventListener("scroll", scrollUp);
+
+/*==============Dark Light Theme============== */
+const themeButton = document.getElementById("theme-button");
+const darkTheme = "dark-theme";
+const iconTheme = "uil-sun";
+
+/* Previously selected theme (if the user had selected) */
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-theme");
+
+/* Obtain the current theme that the interface has by validating the dark-them class */
+const getCurrentTheme = () => {
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+};
+const getCurrentIcon = () => {
+  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
+};
+
+/* Validate if the user previously chose a theme */
+if (selectedTheme) {
+  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
+    darkTheme
+  );
+  themeButton.classList[selectedIcon === "uil-moon" ? "add" : "remove"](
+    iconTheme
+  );
+}
+
+/* Activate / deactivate the theme manually with the button */
+themeButton.addEventListener("click", () => {
+  /* Add or remove the dark / icon theme  */
+  document.body.classList.toggle(darkTheme);
+  themeButton.classList.toggle(iconTheme);
+
+  /* Save the theme and the current icon that the user chose */
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
