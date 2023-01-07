@@ -131,7 +131,7 @@ var swiperTestimonial = new Swiper(".testimonial-container ", {
   },
 });
 
-/*==============Section Scroll Active Link============== */
+/*==============Section Scroll to Active Link============== */
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -155,6 +155,7 @@ function scrollActive() {
 }
 
 window.addEventListener("scroll", scrollActive);
+
 /*==============Change Background Header============== */
 function scrollHeader() {
   const nav = document.getElementById("header");
@@ -167,3 +168,15 @@ function scrollHeader() {
   }
 }
 window.addEventListener("scroll", scrollHeader);
+
+/*==============Show ScrollUpp Arrow============== */
+function scrollUp() {
+  const scrollUp = document.getElementById("scroll-up");
+  /* When the scroll is higher than 560 view port height, add the show-scroll class to the tag with the scroll */
+  if (this.scrollY >= 560) {
+    scrollUp.classList.add("show-scroll");
+  } else {
+    scrollUp.classList.remove("show-scroll");
+  }
+}
+window.addEventListener("scroll", scrollUp);

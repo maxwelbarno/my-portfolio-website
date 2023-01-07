@@ -941,3 +941,30 @@ img {
 .footer-link {
   color: #fff;
 }
+
+/* =========Scroll Up========= */
+.scroll-up {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  background-color: var(--first-color);
+  opacity: 0.8;
+  padding: 0.3rem;
+  border-radius: 0.4rem;
+  z-index: var(--z-tooltip);
+  transition: 0.4s;
+}
+
+.scroll-up:hover {
+  background-color: var(--first-color-alt);
+}
+
+.scroll-up-icon {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* Show Scroll */
+.show-scroll {
+  bottom: 5rem;
+}
