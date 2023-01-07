@@ -97,7 +97,7 @@ modalCloses.forEach((modalClose) => {
 });
 
 /*==============Portfolio Swiper============== */
-var swiper = new Swiper(".portfolio-container", {
+var swiperPortfolio = new Swiper(".portfolio-container ", {
   cssMode: true,
   loop: true,
   navigation: {
@@ -107,5 +107,26 @@ var swiper = new Swiper(".portfolio-container", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
+  },
+});
+
+/*==============Testimonial Swiper============== */
+var swiperTestimonial = new Swiper(".testimonial-container ", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 48,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakPoints: {
+    568: {
+      slidesPerView: 2,
+    },
   },
 });

@@ -769,14 +769,11 @@ img {
 }
 
 .project-title {
-  font-size: var(--h3-font-size);
   margin-top: var(--mb-0-75);
   margin-bottom: var(--mb-0-75);
 }
 
 .project-description {
-  font-size: var(--mb-1-5);
-  font-size: var(--normal-font-size);
   margin-bottom: var(--mb-1);
 }
 
@@ -787,4 +784,45 @@ img {
 
 .project-img {
   justify-self: center;
+}
+
+/* =========Testimonial========= */
+
+.testimonial-data,
+.testimonial-header {
+  display: flex;
+}
+
+.testimonial-data {
+  justify-content: space-between;
+  margin-bottom: var(--mb-1);
+}
+
+.testimonial-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: var(--mb-0-75);
+}
+
+.testimonial-name {
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-medium);
+}
+
+.testimonial-client {
+  font-size: var(--small-font-size);
+  color: var(--text-color-light);
+}
+
+.testimonial-description {
+  margin-bottom: var(--mb-2-5);
+}
+
+.testimonial-icon-star {
+  color: var(--first-color);
+}
+
+.swiper .swiper-pagination-testimonial {
+  bottom: 0;
 }
