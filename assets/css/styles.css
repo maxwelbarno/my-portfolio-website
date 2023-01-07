@@ -859,7 +859,7 @@ img {
   padding: 0.75rem 1rem 0.25rem;
 }
 
-.contact-label{
+.contact-label {
   font-size: var(--small-font-size);
   color: var(--title-color);
 }
@@ -873,4 +873,61 @@ img {
   border: none;
   outline: none;
   padding: 0.25rem 0.5rem 0.5rem 0;
+}
+
+/* =========Footer========= */
+
+.footer {
+  padding-top: 2rem;
+}
+
+.footer-container {
+  row-gap: 3.5rem;
+}
+
+.footer-bg {
+  background-color: var(--first-color-second);
+  padding: 2rem 0 3rem;
+}
+
+.footer-title {
+  font-size: var(--h1-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.footer-subtitle {
+  font-size: var(--small-font-size);
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
+}
+
+.footer-link:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer-social {
+  font-size: 1.25rem;
+  margin-right: var(--mb-1-5);
+}
+
+.footer-social:hover {
+  color: var(--first-color-lighter);
+}
+
+.footer-copy {
+  font-size: var(--smaller-font-size);
+  text-align: center;
+  color: var(--text-color-light);
+  margin-top: var(--mb-3);
+}
+
+.footer-title,
+.footer-subtitle,
+.footer-social,
+.footer-link {
+  color: #fff;
 }
