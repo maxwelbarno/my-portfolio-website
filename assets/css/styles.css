@@ -339,6 +339,15 @@ img {
   padding: 0.75rem 1rem;
 }
 
+.button-white {
+  background-color: #fff;
+  color: var(--first-color);
+}
+
+.button-white:hover {
+  background-color: #fff;
+}
+
 .button-link {
   padding: 0;
   background-color: transparent;
@@ -748,4 +757,34 @@ img {
 .swiper-button-prev,
 .swiper-pagination-bullet {
   outline: none;
+}
+
+/* =========Project========= */
+.project {
+  text-align: center;
+}
+
+.project-bg {
+  background-color: var(--first-color-second);
+}
+
+.project-title {
+  font-size: var(--h3-font-size);
+  margin-top: var(--mb-0-75);
+  margin-bottom: var(--mb-0-75);
+}
+
+.project-description {
+  font-size: var(--mb-1-5);
+  font-size: var(--normal-font-size);
+  margin-bottom: var(--mb-1);
+}
+
+.project-title,
+.project-description {
+  color: #fff;
+}
+
+.project-img {
+  justify-self: center;
 }
