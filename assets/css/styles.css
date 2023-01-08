@@ -996,3 +996,145 @@ img {
 .show-scroll {
   bottom: 5rem;
 }
+
+/* ========== Media Queries =========== */
+
+/* Small Devices */
+@media screen and (max-width: 350px) {
+  .container {
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
+
+  .nav-menu {
+    padding: 2rem 0.25rem 2rem;
+  }
+
+  .nav-list {
+    column-gap: 0;
+  }
+
+  .home-content {
+    grid-template-columns: 0.25fr 3fr;
+  }
+
+  .home-blob {
+    width: 180px;
+  }
+
+  .skills-title {
+    font-size: var(--normal-font-size);
+  }
+
+  .qualification-data {
+    gap: 0.5rem;
+  }
+
+  .services-container {
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+
+  .section {
+    padding: 1rem 0 2rem;
+  }
+
+  .button {
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+  }
+
+  .section-subtitle {
+    margin-bottom: var(--mb-2);
+  }
+
+  .service-container {
+    display: flex;
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-container {
+    gap: 2rem;
+  }
+
+  .footer-links {
+    row-gap: 1rem;
+  }
+
+  .footer-bg {
+    padding: 1rem 0 1.5rem;
+  }
+
+  .home-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    padding-top: rem;
+  }
+
+  .home-social {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .testimonial-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: var(--mb-0-75);
+  }
+
+  .testimonial-name {
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+  }
+
+  .contact-content {
+    background-color: var(--input-color);
+    border-radius: 0.5rem;
+    padding: 0.5rem 0.75rem 0;
+  }
+
+  .service-header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+
+  .scroll-up {
+    padding: 0.2rem;
+    border-radius: 0.2rem;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    column-gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .nav-item {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+  }
+}
