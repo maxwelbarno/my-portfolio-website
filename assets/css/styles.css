@@ -1101,6 +1101,10 @@ img {
     margin-bottom: var(--mb-0-25);
   }
 
+  .testimonial-data, .testimonial-description{
+    text-align: center  ;
+  }
+
   .contact-content {
     background-color: var(--input-color);
     border-radius: 0.5rem;
